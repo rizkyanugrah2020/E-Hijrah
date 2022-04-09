@@ -1,0 +1,99 @@
+<template>
+<!-- Body -->
+<div class="container">
+  <div class="column">
+    <h1 class="fw-bold">Para Pengembang</h1>
+    <div class="row">
+      <div
+        v-for="i in cards"
+        :key="i"
+        class="col-md-4 col-lg-4 col-12 p-2">
+        <div class="card">
+          <div class="card-body">
+            <img :src="`src/images/${i.image}`" class="img-thumbnail">
+            <h5 class="card-title">{{ i.title }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted"> {{ i.desc }} </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</template>
+<script>
+export default {
+  data () {
+    return {
+      cards: [
+        {
+          image: 'kotak4.jpg',
+          title: 'Rudi Hartawan',
+          desc: 'CEO E-Hijrah'
+        },
+        {
+          image: 'kotak1.jpg',
+          title: 'Ridho Dzaki',
+          desc: 'Frontend Developer'
+        },
+        {
+          image: 'kotak3.jpg',
+          title: 'Nopriansyah',
+          desc: 'Backend Developer'
+        },
+        {
+          image: 'kotak2.jpg',
+          title: 'Muhammad Anugrah Rizky',
+          desc: 'UI/UX Designer'
+        }
+      ]
+    }
+  }
+}
+</script>
+<style>
+.title{
+  margin-top: 100px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.sub-title{
+  font-size: 20px;
+  color: grey;
+}
+@media screen and (max-width: 600px) {
+  .title {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  .sub-title{
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+.btn-default {
+        background-color: #186049;
+        color: white;
+        border-radius: 25px;
+        padding: 12px 50px;
+    }
+    .btn-default:hover,
+    .btn-default:focus,
+    .btn-default:active    {
+        background-color: #053022;
+        color: white;
+    }
+
+
+.img-hero{
+  margin-top: 80px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+</style>

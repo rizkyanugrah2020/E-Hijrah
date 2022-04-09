@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as n,a}from"./index.ed344f08.js";const s={},o={class:"container text-center"},_=a("h2",{class:"fw-bold"},"Apabila ada pertanyaan seputar aplikasi atau keluhan tentang aplikasi hubungi nomor dibawah ini",-1),c=a("button",{class:"button"},"Whatsapp",-1),i=[_,c];function r(l,d){return e(),n("div",o,i)}var u=t(s,[["render",r]]);export{u as default};
